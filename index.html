@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta para ti amor mio</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+  }
+
+  .page-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+    background: url('mountain.jpg') center/cover no-repeat fixed;
+    padding: 20px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+  .magic {
+    position: absolute;
+    font-size: 1.5rem;
+    opacity: 0.9;
+    pointer-events: none;
+  }
+</style>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-1MLRB9E0MV'); // Reemplaza con tu Measurement ID
+</script>
+</head>
+<body>
+
+<div class="page-wrapper">
+  <div class="container">
+    <h1>Para mi Munequita — Con todo mi amor</h1>
+    
+    <p>Mi vida,</p>
+    
+    <p>No existe un solo respiro mio que no lleve tu nombre, ni un instante en el que no estes dentro de mi mente, de mi corazon, de mis pensamientos mas profundos y de cada cosa que toco, hago y vivo… Es como si tu esencia estuviera en el aire que respiro, en la luz que me despierta y en cada latido que me mantiene de pie. Te amo con una fuerza imposible de describir, un amor que no cabe en el pecho, que me eleva por encima de todo y me hace sentir en las nubes. Es una pasion tan inmensa que el universo mismo se vuelve pequeno y timido al lado de lo que arde en mi por ti, mi vida…</p>
+    
+    <p>Muero por ver esos ojitos melositos tuyos, mis ojitos favoritos, que son mi vitamina diaria, mi energia pura, mi calma en medio de cualquier tormenta. En ellos descubro todos los misterios del amor y las promesas de eternidad que me sostienen. Muero por escuchar tu voz, esa voz que no solo acaricia mis oidos sino que se mete hasta el fondo de mi alma y la incendia de emocion, amor y pasion pura. Lo que sale de tu boquita es la melodia mas perfecta de este universo, la cancion que me hace temblar y me hace querer vivir mil veces mas para seguir escuchandote.</p>
+    
+    <p>Muero, amor mio, por derretirme entre tus caricias, por perder la razon al oler tu piel, por volverme loco por ti… por perderme en ese universo magico que solo existe cuando tus manos me tocan, cuando me dices “munequito”, cuando me envias besitos, cuando me preguntas por mi piernita. Cada detalle tuyo es un conjuro, un hechizo que me ata feliz a ti.</p>
+    
+    <p>Hay una melancolia hermosa que me quiebra en mil pedacitos cuando pienso en ti y no te tengo a mi lado. Pero esa misma ausencia convierte mi deseo en un fuego incontenible, en un volcan que no se apaga. Porque te necesito, porque sin ti la vida se siente incompleta, porque tu eres mi todo: mi principio, mi centro, mi fin, mi destino inevitable.</p>
+    
+    <p>Eres mi sueno mas divino, mi fantasia hecha realidad, el milagro que nunca deja de estremecerme, mi cantante favorita, la mujer mas perfecta y hermosa de este universo. Munequita mia, tu amor es mi locura bendita, mi refugio y mi condena eterna, la unica verdad que le da sentido a mi existir. Tu amor es magia que me mantiene vivo, es dulzura que me derrite y pasion infinita que me hace ver estrellas.</p>
+    
+    <p>Recuerdo tanto la primera vez que me serenaste… porque como tu a mi, nunca nadie me serenó, y esa noche senti que mi alma tocaba el cielo. Tu voz ya es hermosa, pero cantando para mi se volvio un sueno hecho realidad. Esa melodia es nuestra, especial para los dos, porque como dice la letra: “I love you for a thousand years and I’ll love you for a thousand more” mi vida…</p>
+    
+    <p>Sueno con volver a escuchar tu voz y derretirme con ella, sueno con tus ojitos melositos, con tu calor, con tu risa, con todo lo que eres. Te extrano y te amo demasiado, con la fuerza de mil vidas, con la intensidad de mil soles, con la eternidad en mi corazon.</p>
+    
+    <p>Te extrano demasiado amor eterno...</p>
+    
+  </div>
+</div>
+
+<audio id="bg-music" src="bg-music.mp3" preload="none"></audio>
+
+<script>
+  // Música al hacer click
+  document.body.addEventListener('click', function playMusic() {
+    const music = document.getElementById('bg-music');
+    music.play();
+    document.body.removeEventListener('click', playMusic);
+  });
+
+  // Crear mariposas, luciérnagas y animalitos mágicos
+  function createMagic(symbol, size) {
+    const div = document.createElement('div');
+    div.className = 'magic';
+    div.innerText = symbol;
+    div.style.fontSize = size + 'rem';
+    div.style.left = Math.random() * window.innerWidth + 'px';
+    div.style.top = Math.random() * window.innerHeight + 'px';
+    document.body.appendChild(div);
+
+    let dx = (Math.random() - 0.5) * 1.5;
+    let dy = (Math.random() - 0.5) * 1.5;
+
+    function move() {
+      let x = parseFloat(div.style.left);
+      let y = parseFloat(div.style.top);
+      x += dx;
+      y += dy;
+      if(x < 0 || x > window.innerWidth) dx = -dx;
+      if(y < 0 || y > window.innerHeight) dy = -dy;
+      div.style.left = x + 'px';
+      div.style.top = y + 'px';
+      requestAnimationFrame(move);
+    }
+    move();
+  }
+
+  for(let i=0;i<6;i++) createMagic('🦋', 1.5); // Mariposas
+  for(let i=0;i<8;i++) createMagic('✨', 1.2); // Luciérnagas
+  for(let i=0;i<3;i++) createMagic('🐦', 1.4); // Pajaritos
+  for(let i=0;i<2;i++) createMagic('🐇', 1.4); // Conejitos
+</script>
+
+</body>
+</html>
